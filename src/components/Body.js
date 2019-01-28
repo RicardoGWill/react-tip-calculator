@@ -4,7 +4,7 @@ class Body extends Component {
   render(){
     return(
       <div>
-        Body
+        This is the body.  The tip calculator will go here.
       </div>
     );
   }
