@@ -4,7 +4,13 @@ class Body extends Component {
   render(){
     return(
       <div>
-        This is the body.  The tip calculator will go here.
+        <form>
+          <label>
+            Bill Amount: 
+            <input type="text" name="billAmount" />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     );
   }
