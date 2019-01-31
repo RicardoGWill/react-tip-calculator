@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class Body extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      total: 10
+    };
+  }
+
+
   render(){
     return(
       <div>
@@ -20,7 +29,7 @@ class Body extends Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        <h3>Total: </h3>
+        <h3>Total: ${this.state.total}</h3>
       </div>
     );
   }
