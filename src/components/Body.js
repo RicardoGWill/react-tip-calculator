@@ -6,10 +6,11 @@ class Body extends Component {
       <div>
         <form>
           <label>
-            Bill Amount: 
+            Bill Amount:
             <input type="text" name="billAmount" />
           </label>
           <input type="submit" value="Submit" />
+          <h1>Next</h1>
         </form>
       </div>
     );
