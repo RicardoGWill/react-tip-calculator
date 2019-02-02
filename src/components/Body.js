@@ -28,7 +28,7 @@ class Body extends Component {
     // event.preventDefault();
     // this.setState({
     //   total: this.state.billAmount + this.state.percentageTip
-    });
+    // });
   }
 
 
