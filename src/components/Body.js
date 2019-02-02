@@ -20,9 +20,6 @@ class Body extends Component {
             <input type="text" name="billAmount" />
           </label>
           <input type="submit" value="Submit" />
-        </form>
-        <h3>Second Form</h3>
-        <form>
           <label>
             Percentage Tip:
             <input type="text" name="PercentageTip" />
