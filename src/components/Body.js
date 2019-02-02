@@ -5,9 +5,15 @@ class Body extends Component {
     super(props);
 
     this.state = {
-      total: 10
+      total: null
     };
   }
+
+  handleChange = (event) => {
+    this.setState({
+      total: event.target.value
+    });
+  };
 
 
   render(){
@@ -15,16 +21,26 @@ class Body extends Component {
       <div>
         <h3>First Form</h3>
         <form>
-          <label>
-            Bill Amount:
-            <input type="text" name="billAmount" />
-          </label>
-          <input type="submit" value="Submit" />
-          <label>
-            Percentage Tip:
-            <input type="text" name="PercentageTip" />
-          </label>
-          <input type="submit" value="Submit" />
+          <div>
+           <label>
+             Bill Amount:
+             <input
+              type="text"
+              name="billAmount"
+              placeholder="$"
+              value={this.state.total}
+              onChange={this.handleChange.bind(this)} />
+           </label>
+          </div>
+          <div>
+           <label>
+             Percentage Tip:
+             <input type="text" name="PercentageTip" placeholder="%" />
+           </label>
+          </div>
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
         </form>
         <h3>Total: ${this.state.total}</h3>
       </div>
